@@ -1,0 +1,354 @@
+.theme-dark {
+    --background-prim-colour: #111111;
+    --background-sec-colour: #333333;
+    --text-colour: #ffffff;
+    --heading-text-colour: #A29890;
+    --button: #5c5f5c;
+    --button-hover: #282a28;
+}
+
+.theme-light {
+    --background-prim-colour: #ffffff;
+    --background-sec-colour: #ffffff;
+    --text-colour: #111111;
+    --heading-text-colour: #282a28;
+    --button: #767474;
+    --button-hover: #A29890;
+}
+
+/*Website main*/
+
+#players-online {
+    color: var(--text-colour);
+}
+
+#body-background {
+    background: var(--background-prim-colour);
+}
+
+#header {
+    background: var(--background-prim-colour);
+}
+
+#header-logo {
+    alignment: right;
+}
+
+#header-div {
+    float: right;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#navigation-bar {
+    background: var(--background-prim-colour);
+}
+
+#navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navigation-bar li {
+    float: right;
+}
+
+#navigation-bar a {
+    display: block;
+    color: var(--text-colour);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navigation-bar a:hover {
+    background: var(--background-sec-colour);
+    text-decoration: none;
+}
+/**/
+.dropbtn {
+    background: var(--background-prim-colour);
+    color: var(--text-colour);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--button);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text-colour);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: var(--button-hover);
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background: var(--button);
+    color: var(--text-colour);
+}
+/**/
+/*End of website main*/
+
+/*Home page*/
+.leftside, .middle, .rightside {
+    height: 50vh;
+    width: 100%;
+}
+
+.leftside {
+    background: var(--background-prim-colour);
+}
+
+.rightside {
+    background: var(--background-sec-colour);
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+#welcome-leftside-h1 {
+    color: var(--heading-text-colour);
+    font-size: 72px;
+    text-align: center;
+    font-family: "Arial Black",serif;
+}
+
+#welcome-leftside-p {
+    color: var(--text-colour);
+    font-size: 20px;
+    text-align: center;
+    font-family: "Helvetica",serif;
+}
+
+#welcome-rightside-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 74%;
+}
+
+.discord-rightside {
+    background: var(--background-prim-colour);
+}
+
+#discord-leftside-h2 {
+    padding-top: 50px;
+    color: var(--heading-text-colour);
+    font-size: 40px;
+    text-align: center;
+    font-family: "Arial Black",serif;
+}
+
+#discord-leftside-p {
+    color: var(--text-colour);
+    font-size: 18px;
+    text-align: center;
+    font-family: "Helvetica",serif;
+}
+
+#discord-rightside-widget {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle {
+    background: var(--background-prim-colour);
+}
+
+.contact-rightside {
+    background: var(--background-prim-colour);
+}
+/*End of home*/
+
+/*Forms*/
+label {
+    color: var(--text-colour);
+    font-family: "Arial", serif;
+}
+
+.form-container {
+    border-radius: 5px;
+    background: var(--background-prim-colour);
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #111111;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+input[type=submit] {
+    background: var(--button);
+    color: var(--text-colour);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: var(--button-hover);
+}
+/*End of forms*/
+
+/*Report page*/
+#report {
+    color: var(--text-colour);
+    font-family: "Arial", serif;
+}
+
+#report h1 {
+    color: var(--heading-text-colour);
+    font-size: 50px;
+    text-align: center;
+    font-family: "Arial Black",serif;
+}
+
+#report p {
+    text-align: center;
+}
+#report table {
+    margin: auto;
+}
+
+#report th {
+    color: var(--heading-text-colour);
+    text-align: right;
+}
+
+#report td {
+    text-align: left;
+}
+/*End of report page*/
+.rules-leftside, .rules-middleleft, .rules-middleright, .rules-rightside {
+    height: 25vh;
+    width: 100%;
+}
+
+.rules-leftside {
+    background: var(--background-prim-colour);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rules-middleleft {
+    background: var(--background-prim-colour);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rules-middleright {
+    background: var(--background-prim-colour);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rules-rightside {
+    background: var(--background-prim-colour);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rules-leftside p {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-middleleft p {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-middleright p {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-rightside p {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-leftside h5 {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-middleleft h5 {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-middleright h5 {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-rightside h5 {
+    text-align: center;
+    color: var(--text-colour);
+}
+
+.rules-div {
+    padding-top: 20px;
+}
+
+.rules-top-div h1{
+    font-family: "Arial Black", serif;
+    font-size: 50px;
+    color: var(--text-colour);
+    text-align: center;
+}
+
+.rules-top-div p{
+    font-family: "Arial", serif;
+    font-size: 20px;
+    color: var(--text-colour);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form-error {
+    color: red;
+    display: inline;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="theme-dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Apocalypse RS - Report</title>
+</head>
+<body id="body-background">
+<header id="header">
+    <img id="header-logo" src="images/logo_transparent.png" alt="Apocalypse RS's Logo">
+    <div id="header-div">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var accountName = "bblewitt";
+            $.get("https://everythingrs.com/api/players-online/get/" + accountName, function (response) {
+                $("#players").html(response);
+            });
+        </script>
+        <h4 id="players-online">
+            There are currently <span id="players"></span> players online.
+        </h4>
+    </div>
+</header>
+<div class="row no-gutters">
+    <div class="col no-gutters"></div>
+    <div class="col no-gutters">
+        <div id="navigation-bar">
+            <ul>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="https://apocalypsers.everythingrs.com/services/store" target="_blank">Store</a></li>
+                <li><a href="https://apocalypsers.everythingrs.com/services/vote" target="_blank">Vote</a></li>
+                <li><a href="https://apocalypsers.everythingrs.com/services/hiscores" target="_blank">Hiscores</a></li>
+                <li><a href="https://89967a1d-9e0a-461f-aab5-28b5c1dbe1ca.filesusr.com/archives/d20c05_b0d66b2296824ba99ed72379570a4f50.jar?dn=ApocalypseRS%20Launcher.jar">Play</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="report">
+        <h1>Reporting a player</h1>
+        <p>To fill out the form correctly I only ask that you follow these directions.</p>
+        <table>
+            <tr>
+                <th>Your In-game name: </th>
+                <td>Should be your name so that the staff team can contact you back</td>
+            </tr>
+            <tr>
+                <th>Offender's In-game name: </th>
+                <td>Who your reporting</td>
+            </tr>
+            <tr>
+                <th>Offence: </th>
+                <td>What rule did they break and it can be Server rule 1 or Discord rule 2</td>
+            </tr>
+            <tr>
+                <th>Details and events: </th>
+                <td>Give the staff team a detailed report on what happened so that they can act accordingly</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div class="row no-gutters">
+            <div class="col no-gutters">
+                <div class="contact-leftside"></div>
+            </div>
+            <div class="col no-gutters">
+                <div class="contact-middle">
+                    <div class="form-container">
+                        <p class="form-error">Field Required *</p>
+                        <form action="https://formspree.io/f/xknkgzyq" method="POST">
+                            <label for="gamename">Your In-game name<p class="form-error"> *</p></label><br>
+                            <input type="text" id="gamename" name="gamename" placeholder="bblewitt"><br>
+                            <label for="offender">Offender's In-game name<p class="form-error"> *</p></label><br>
+                            <input type="text" id="offender" name="offender" placeholder="nova"><br>
+                            <label for="offence">Offence<p class="form-error"> *</p></label><br>
+                            <input type="text" id="offence" name="offence" placeholder="Server rule 1"><br>
+                            <label for="details">Details and events<p class="form-error"> *</p></label><br>
+                            <textarea type="text" id="details" name="details" placeholder="I saw nova at edgeville cursing ever few minuites" style="height: 200px"></textarea><br>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col no-gutters">
+                <div class="contact-rightside"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

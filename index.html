@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="theme-dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Apocalypse RS - Home</title>
+</head>
+<body id="body-background">
+<header id="header">
+    <img id="header-logo" src="images/logo_transparent.png" alt="Apocalypse RS's Logo">
+    <div id="header-div">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var accountName = "bblewitt";
+            $.get("https://everythingrs.com/api/players-online/get/" + accountName, function (response) {
+                $("#players").html(response);
+            });
+        </script>
+        <h4 id="players-online">
+            There are currently <span id="players"></span> players online.
+        </h4>
+    </div>
+</header>
+<div class="row no-gutters">
+    <div class="col no-gutters"></div>
+    <div class="col no-gutters">
+        <div id="navigation-bar">
+            <ul>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="https://apocalypsers.everythingrs.com/services/store" target="_blank">Store</a></li>
+                <li><a href="https://apocalypsers.everythingrs.com/services/vote" target="_blank">Vote</a></li>
+                <li><a href="https://apocalypsers.everythingrs.com/services/hiscores" target="_blank">Hiscores</a></li>
+                <li><a href="https://89967a1d-9e0a-461f-aab5-28b5c1dbe1ca.filesusr.com/archives/d20c05_b0d66b2296824ba99ed72379570a4f50.jar?dn=ApocalypseRS%20Launcher.jar">Play</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="row no-gutters">
+        <div class="col no-gutters">
+            <div class="leftside">
+                <h1 id="welcome-leftside-h1">Welcome to<br>Apocalypse RS</h1>
+                <p id="welcome-leftside-p">Small server and community building and creating<br>friendships along the way.<br><br>
+                    Want to join in on the action?<br>
+                    Want to compete in hiscore runnings?<br>
+                    Weekly events<br>
+                    Competative Zulrah timing<br>
+                    Wilderness slayer, PVP and bosses.</p>
+            </div>
+        </div>
+        <div class="col no-gutters">
+            <div class="rightside">
+                <img id="welcome-rightside-img" src="images/Home.png" alt="Image of the Home area of Apocalypse RS">
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="row no-gutters">
+        <div class="col no-gutters">
+            <div class="leftside">
+                <h2 id="discord-leftside-h2">Join the discord server</h2>
+                <p id="discord-leftside-p">Need to get quick help?<br><br>
+                    Want to talk to the community?<br><br>
+                    If you need quick and fast help then the discord server is for you where you can instantly talk to<br>
+                    other people but keep in mind to follow the server rules and those apply to everything.<br>
+                    If you want to just chat verbally to people then you can do so on the discord server while you play.</p>
+            </div>
+        </div>
+        <div class="col no-gutters">
+            <div class="discord-rightside">
+                <div class="discord-rightside">
+                    <iframe id="discord-rightside-widget" src="https://discord.com/widget?id=799221799346896896&theme=dark" width="350" height="467" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="row no-gutters">
+        <div class="col no-gutters">
+            <div class="leftside"></div>
+        </div>
+        <div class="col no-gutters">
+            <div class="middle">
+                <div class="form-container">
+                    <p class="form-error">Field Required *</p>
+                    <form action="https://formspree.io/f/xgervzdz" method="POST">
+                        <label for="username">Username<p class="form-error"> *</p></label>
+                        <input type="text" id="username" name="username" placeholder="Username..."><br>
+                        <label for="discordname">Discord name + #</label><br>
+                        <input type="text" id="discordname" name="discordname" placeholder="Discord name + #"><br>
+                        <label for="email">Email address<p class="form-error"> *</p></label><br>
+                        <input type="text" id="email" name="email" placeholder="Email"><br>
+                        <label for="message">Message<p class="form-error"> *</p></label><br>
+                        <textarea type="text" id="message" name="message" placeholder="Type your message here..." style="height: 200px"></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col no-gutters">
+            <div class="contact-rightside"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
